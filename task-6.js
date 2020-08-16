@@ -5,7 +5,9 @@ do {
   input = prompt ('Введите число');
   if (Number(input)) {
   total += (Number(input));
- } 
+ } else if (isNaN(input)) {
+   alert('Было введено не число, попробуйте еще раз');
+ }
 } while (input !== null);
 alert(`Общая сумма чисел равна ${total}`);
 
