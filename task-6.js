@@ -1,18 +1,15 @@
 let input;
-let total=0;
+let total = 0;
 
 do {
-  input = prompt ('Введите число');
+  input = prompt("Введите число");
   if (Number(input)) {
-  total += (Number(input));
- } else if (isNaN(input)) {
-   alert('Было введено не число, попробуйте еще раз');
- }
+    total += Number(input);
+  } else if (isNaN(input)) {
+    alert("Было введено не число, попробуйте еще раз");
+  }
 } while (input !== null);
 alert(`Общая сумма чисел равна ${total}`);
-
-
-
 
 /*Напиши скрипт который просит посетителя ввести число в prompt до тех пор,
 пока посетитель на нажмет Cancel и каждый раз добавляет введенное значение к общей сумме.
